@@ -27,3 +27,23 @@
 
 > **###4.  Access** 
 * http://localhost:8080
+
+> **###5. Important points**
+* By default we can store jsp pages in resources->template folder or
+  we can descrive this in application.properties
+```text
+	spring.mvc.view.prefix: /WEB-INF/jsp/
+	spring.mvc.view.suffix: .jsp
+```
+* We can access variables values from application.properties file using
+```text
+	welcome.message inside application.properties
+	& @Value("${welcome.message:test}") to access this value
+```
+* Class having @SpringBootApplication attached to it, contains main method
+  - So this class can be executed directly, from IDE
+  - This class is mainly resposible for running the whole project
+* While using Spring boot there is no need to build the project
+  - So when you make change in the project you do not need to update, build and restart the server.
+  - Such work has eliminated from Spring Boot
+ 
