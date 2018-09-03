@@ -40,9 +40,9 @@
 	welcome.message inside application.properties
 	& @Value("${welcome.message:test}") to access this value
 ```
-* Class having @SpringBootApplication attached to it, contains main method
+* Class having @SpringBootApplication attached to it contains main method
   - So this class can be executed directly, from IDE
-  - This class is mainly resposible for running the whole project
+  - This class is mainly resposible for running the whole project {In general}
 * While using Spring boot there is no need to build the project
   - So when you make change in the project you do not need to update, build and restart the server.
   - Such work has eliminated from Spring Boot
